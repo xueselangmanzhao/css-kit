@@ -7,17 +7,14 @@
  */
 import { App, Plugin } from 'vue';
 
-import { ButtonPlugin } from './Button';
-import { WaterBoxPlugin } from './WaterBox';
+{{ importPlugins }}
 
 const MYKitPlugin: Plugin = {
   install(app: App) {
-    ButtonPlugin.install?.(app);
-    WaterBoxPlugin.install?.(app);
+    {{ installPlugins }}
   },
 };
 
 export default MYKitPlugin;
 
-export * from './Button'
-export * from './WaterBox'
+{{ exportPlugins }}
