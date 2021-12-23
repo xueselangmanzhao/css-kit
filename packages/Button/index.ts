@@ -1,4 +1,3 @@
-//模块导出文件
 import { App, Plugin } from 'vue';
 import Button from './src/index.vue';
 

@@ -10,14 +10,14 @@ import { App, Plugin } from 'vue';
 import { ButtonPlugin } from './Button';
 import { WaterBoxPlugin } from './WaterBox';
 
-const MYKitPlugin: Plugin = {
+const CSSKitPlugin: Plugin = {
   install(app: App) {
     ButtonPlugin.install?.(app);
     WaterBoxPlugin.install?.(app);
   },
 };
 
-export default MYKitPlugin;
+export default CSSKitPlugin;
 
 export * from './Button'
 export * from './WaterBox'
